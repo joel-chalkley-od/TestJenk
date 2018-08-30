@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'jdk9'
+    label 'jdk8'
   }
   stages {
     stage('Say Hello') {
@@ -13,7 +13,7 @@ pipeline {
     }
   }
   environment {
-    MY_NAME = 'Joel'
+    MY_NAME = 'Mary'
     TEST_USER = credentials('test-user')
   }
   parameters {
